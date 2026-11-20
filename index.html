@@ -1,1 +1,278 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SmartLedger Privacy Policy and Terms of Service." />
+  <title>SmartLedger — Privacy & Terms</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#667085; --line:#e6eaf0; --bg:#f5f7fb; --brand:#4656d9; --surface:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:110px; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.7; }
+    header { position:sticky; top:0; z-index:10; background:rgba(255,255,255,.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    .header-inner { max-width:960px; margin:auto; padding:14px 22px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    .brand { font-weight:800; letter-spacing:-.04em; font-size:1.2rem; } .brand span { color:var(--brand); }
+    nav { display:flex; gap:8px; flex-wrap:wrap; } nav a { text-decoration:none; color:var(--muted); font-weight:650; font-size:.92rem; padding:8px 13px; border:1px solid var(--line); border-radius:999px; } nav a:hover { color:var(--brand); border-color:var(--brand); }
+    main { max-width:960px; margin:38px auto; padding:0 20px 50px; }
+    .intro { margin-bottom:22px; } .intro h1 { margin:0 0 6px; font-size:clamp(1.8rem,4vw,2.6rem); letter-spacing:-.04em; } .intro p { color:var(--muted); margin:0; }
+    .document { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:clamp(22px,5vw,48px); box-shadow:0 8px 30px rgba(20,35,70,.04); margin-bottom:28px; }
+    .document h1 { font-size:1.8rem; margin:0 0 12px; line-height:1.3; } .document h2 { margin:2.2em 0 .7em; padding-bottom:.4em; border-bottom:1px solid var(--line); font-size:1.35rem; line-height:1.4; } .document h3 { margin:1.5em 0 .5em; font-size:1.08rem; }
+    .document p, .document li { font-size:1rem; } .document ul, .document ol { padding-left:1.5em; } .document li { margin:.35em 0; }
+    .document a { color:var(--brand); overflow-wrap:anywhere; } .document strong { color:#18243b; }
+    .document table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; margin:1.2em 0; } .document th, .document td { text-align:left; padding:10px 12px; border:1px solid var(--line); min-width:150px; } .document th { background:#f2f5fa; }
+    .document hr { border:0; border-top:1px solid var(--line); margin:1.8em 0; } footer { text-align:center; color:var(--muted); padding:20px; font-size:.9rem; }
+    @media(max-width:600px) { .header-inner { justify-content:center; } nav { justify-content:center; } main { margin:24px auto; padding:0 12px 30px; } .document { border-radius:12px; padding:20px 18px; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">Smart<span>Ledger</span></div>
+    <nav aria-label="Legal documents">
+      <a href="#privacy-policy">Privacy Policy</a>
+      <a href="#terms-of-service">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="intro">
+    <h1>Legal & Privacy</h1>
+    <p>SmartLedger Mobile Application</p>
+  </div>
+  <section id="privacy-policy" class="document" aria-labelledby="privacy-title">
+    <h1>Privacy Policy for SmartLedger</h1>
+<p><strong>Effective Date:</strong> November 20, 2026<br />
+<strong>Last Updated:</strong> November 20, 2026</p>
+<p>SmartLedger (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is dedicated to protecting your financial privacy. SmartLedger is engineered with an <strong>offline-first, zero-knowledge architecture</strong>. This means your financial records are owned exclusively by you, stored securely on your device, and encrypted in a manner that ensures <strong>no one—including SmartLedger, its developers, or third-party cloud infrastructure—can decrypt or read your financial data.</strong></p>
+<p>This Privacy Policy transparently describes what information SmartLedger processes, our cryptographic design, how sensitive permissions (like SMS detection) operate strictly on your device, and your rights.</p>
+<hr />
+<h2>1. Zero-Knowledge Architecture: We Cannot Decrypt or Access Your Data</h2>
+<p>SmartLedger is built from the ground up on the principle of <strong>Zero-Knowledge Financial Privacy</strong>:</p>
+<ul>
+<li><strong>Client-Side End-to-End Encryption:</strong> All financial records, accounts, wallets, debts, budgets, notes, and pending expenses are encrypted using <strong>military-grade AES-256-GCM (Authenticated Encryption with Galois/Counter Mode)</strong> before being written to disk or sent to optional cloud sync.</li>
+<li><strong>Key Derivation on Device:</strong> Your encryption key is derived locally using <strong>PBKDF2 with SHA-256 and 80,000 iterations</strong>, salted with a unique 16-byte cryptographically secure random salt.</li>
+<li><strong>No Server-Side PIN Storage:</strong> Your Master PIN and encryption keys are <strong>never transmitted, stored, or logged</strong> on any server or database.</li>
+<li><strong>Zero Decryption Capability:</strong> Because encryption and decryption occur solely in device memory using your private PIN, <strong>no one other than you can decrypt your data.</strong> If our databases or your backup files were ever intercepted, they would appear only as scrambled ciphertext. There are <strong>no developer backdoors, master recovery keys, or remote access methods</strong>.</li>
+</ul>
+<hr />
+<h2>2. Information We Process</h2>
+<h3>A. Financial Records (Encrypted Locally)</h3>
+<ul>
+<li><strong>What you enter:</strong> Transactions (amounts, categories, payment modes, descriptions, dates), custom wallets/accounts, budgets, recurring expenses, loan/debt ledgers, savings goals, and vault notes.</li>
+<li><strong>How it is processed:</strong> Stored strictly in an encrypted local database on your device. Decrypted in memory only while the app is unlocked with your correct Master PIN.</li>
+</ul>
+<h3>B. SMS &amp; Payment Alert Processing (100% On-Device)</h3>
+<p>SmartLedger includes an optional automated expense detection feature that can read transactional alerts from banks and payment apps (e.g., UPI, Google Pay, PhonePe, Paytm, net banking):</p>
+<ul>
+<li><strong>Strictly Financial Detection:</strong> The app utilizes Android's <code>RECEIVE_SMS</code> and <code>READ_SMS</code> permissions solely to scan for incoming bank debit/credit notifications and UPI reference alerts.</li>
+<li><strong>100% Local Parsing:</strong> All SMS parsing is performed <strong>entirely on your device</strong>. Raw SMS messages and verification texts are <strong>never uploaded to any server, cloud provider, or third party</strong>.</li>
+<li><strong>Personal Messages &amp; OTPs Excluded:</strong> Personal text conversations, OTPs (One-Time Passwords), sensitive security codes, and non-financial SMS messages are systematically filtered out and ignored.</li>
+<li><strong>Review &amp; Approval Inbox:</strong> Detected payment alerts are placed into your local &quot;Pending Approvals&quot; inbox. No expense is added to your permanent ledger without your explicit verification or approval.</li>
+<li><strong>User Control:</strong> SMS auto-detection is disabled by default and can be toggled on or off at any time in <strong>Settings $\to$ Auto-Detect Payment SMS</strong>. You can also revoke the SMS permission in your Android system settings at any time without losing any other functionality.</li>
+</ul>
+<h3>C. Account &amp; Authentication Information (Optional Cloud Sync)</h3>
+<ul>
+<li>If you choose to enable cloud backup or multi-device sync, SmartLedger uses <strong>Firebase Phone Authentication</strong> or Google Sign-In to verify your identity.</li>
+<li>This processes your phone number or Google account ID and Firebase session tokens to associate your encrypted sync container with your account.</li>
+<li><strong>Crucially:</strong> Even when cloud synchronization is active, <strong>only encrypted ciphertext payloads</strong> are uploaded to Firebase Cloud Firestore. Firebase and Google cannot read your ledger contents.</li>
+</ul>
+<h3>D. Google Drive Backups (Optional)</h3>
+<ul>
+<li>If you use the Google Drive backup feature, SmartLedger writes an encrypted backup archive directly into your personal Google Drive storage.</li>
+<li>SmartLedger developers have zero access to your Google account, password, or Google Drive files.</li>
+</ul>
+<h3>E. Subscription &amp; In-App Purchases</h3>
+<ul>
+<li>We use <strong>RevenueCat</strong> and <strong>Google Play Billing</strong> to manage Pro subscription entitlements and lifetime purchases.</li>
+<li>RevenueCat processes anonymous purchase tokens, app-store transaction IDs, and product identifiers to grant your entitlement. We never receive or store your credit card, debit card, or banking details.</li>
+</ul>
+<h3>F. Notifications &amp; Reminders</h3>
+<ul>
+<li>If enabled, the app schedules local notifications for budget alerts, bill reminders, and detected payment expenses. Notification scheduling is handled locally on your device via Notifee.</li>
+</ul>
+<h3>G. Biometric Authentication (Fingerprint / Face Unlock)</h3>
+<ul>
+<li>If you enable Biometric Unlock, your Master PIN is stored locally in your device's hardware-backed secure storage (Android Keystore / Keychain).</li>
+<li>Biometric authentication is handled entirely by your device operating system. SmartLedger never accesses, reads, or stores your raw biometric data (such as fingerprint or facial images).</li>
+</ul>
+<h3>H. Optional Floating Quick-Log Bubble</h3>
+<ul>
+<li>SmartLedger includes an optional floating overlay bubble (<code>SYSTEM_ALERT_WINDOW</code>) allowing you to quickly log an expense from anywhere on your device.</li>
+<li>This feature only displays a quick-input prompt and does not monitor, capture, or record your screen, other applications, or external device activity. It can be toggled on or off at any time in app settings.</li>
+</ul>
+<hr />
+<h2>3. We Do Not Use, Sell, or Monetize Your Data</h2>
+<ul>
+<li><strong>No Data Selling:</strong> We do not sell, rent, monetize, or trade your personal or financial data to advertisers, data brokers, credit bureaus, or marketing companies.</li>
+<li><strong>No Advertising SDKs:</strong> SmartLedger contains <strong>zero third-party advertising SDKs or tracking pixels</strong> (no Google AdMob, no Meta/Facebook Audience Network, no ad trackers).</li>
+<li><strong>No Financial Profiling:</strong> We do not analyze your income, spending patterns, net worth, or purchase history for profiling or commercial purposes.</li>
+</ul>
+<hr />
+<h2>4. Third-Party Service Providers</h2>
+<p>To support essential app infrastructure, SmartLedger integrates with trusted platform providers under strict confidentiality:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Provider</th>
+  <th style="text-align:left">Purpose</th>
+  <th style="text-align:left">Data Handled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Google Firebase Authentication</strong></td>
+  <td style="text-align:left">Phone OTP login &amp; account identity</td>
+  <td style="text-align:left">Phone number, auth session tokens</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Google Cloud Firestore</strong></td>
+  <td style="text-align:left">Optional encrypted cloud synchronization</td>
+  <td style="text-align:left"><strong>Encrypted ciphertext blobs only</strong> (unreadable by Google)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Google Drive API</strong></td>
+  <td style="text-align:left">User-managed cloud backup export</td>
+  <td style="text-align:left"><strong>Encrypted backup file</strong> stored in user's personal Drive</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>RevenueCat &amp; Google Play Billing</strong></td>
+  <td style="text-align:left">Subscription verification &amp; entitlement</td>
+  <td style="text-align:left">Anonymous customer ID, purchase receipt IDs</td>
+</tr>
+</tbody>
+</table>
+<p>Each provider processes information in accordance with their respective security certifications and privacy policies.</p>
+<hr />
+<h2>5. Decoy Mode for Physical Privacy</h2>
+<p>SmartLedger includes an advanced <strong>Decoy Mode</strong> feature designed for personal safety and privacy under coercion:</p>
+<ul>
+<li>If you configure a separate Decoy PIN, entering that PIN unlocks a completely independent, isolated decoy ledger.</li>
+<li>Real financial databases and decoy databases are partitioned and encrypted separately. Accessing the decoy environment reveals zero traces of your authentic ledger.</li>
+</ul>
+<hr />
+<h2>6. Data Retention, Export, and Deletion</h2>
+<ul>
+<li><strong>Full Local Data Control:</strong> You can wipe all local financial records, cache, keys, and settings instantly from the app at <strong>Settings $\to$ Clear All Local Data</strong>.</li>
+<li><strong>Data Portability:</strong> You can export your financial data at any time in an encrypted portable JSON format or generate local PDF summary reports.</li>
+<li><strong>Cloud Deletion:</strong> If you have enabled cloud sync and wish to permanently delete your Firebase account and cloud-stored encrypted backups, you can do so in the app settings or by contacting us at the email below. Your cloud record will be permanently purged.</li>
+<li><strong>Uninstalling the App:</strong> Uninstalling SmartLedger completely removes the local database and cryptographic keys from your device.</li>
+</ul>
+<hr />
+<h2>7. Security Responsibility &amp; Forgotten PINs</h2>
+<p>Because SmartLedger uses uncompromising zero-knowledge encryption with no recovery backdoor:</p>
+<ul>
+<li><strong>Please keep your Master PIN safe.</strong></li>
+<li>If you forget your Master PIN and have not backed up your recovery credentials, <strong>neither you nor SmartLedger developers can decrypt or recover your data.</strong></li>
+</ul>
+<hr />
+<h2>8. Children’s Privacy</h2>
+<p>SmartLedger is designed for personal financial management and is not directed to individuals under the age of 18 (or the age of majority in your jurisdiction). We do not knowingly collect personal information from children.</p>
+<hr />
+<h2>9. Future App Development &amp; Changes to This Privacy Policy</h2>
+<p>As SmartLedger continuously evolves, we may introduce new features, optional cloud integrations, or updated tools. Consequently, we may update or expand this Privacy Policy from time to time to accurately reflect new app functionalities, evolving privacy standards, and applicable legal requirements.</p>
+<ul>
+<li><strong>Notification of Material Changes:</strong> If we make significant or material changes to this Privacy Policy—particularly any changes involving new types of data collection, new sensitive permissions, or new third-party integrations—we will provide prominent notice prior to or upon the changes taking effect. Such notice may be delivered through an <strong>in-app announcement, notification banner, release notes update, or public repository notice</strong>, accompanied by an updated &quot;Last Updated&quot; date at the top of this document.</li>
+<li><strong>Continued Use Constitutes Acceptance:</strong> By continuing to access, update, or use SmartLedger after any revised Privacy Policy becomes effective, you acknowledge and agree to the updated terms and practices. If you do not agree with any future changes, you have the right to discontinue using the application and permanently wipe your local records at any time via <strong>Settings $\to$ Clear All Local Data</strong>.</li>
+</ul>
+<hr />
+<h2>10. Contact Us &amp; Data Requests</h2>
+<p>If you have questions about this Privacy Policy, our encryption practices, or wish to submit a data deletion request, please contact:</p>
+<ul>
+<li><strong>Contact Email:</strong> <a href="mailto:sreekanthreddy778@gmail.com">sreekanthreddy778@gmail.com</a></li>
+<li><strong>Application:</strong> SmartLedger Mobile Application</li>
+</ul>
+
+  </section>
+  <section id="terms-of-service" class="document" aria-labelledby="terms-title">
+    <h1>Terms of Service for SmartLedger</h1>
+<p><strong>Effective Date:</strong> November 20, 2026<br />
+<strong>Last Updated:</strong> November 20, 2026</p>
+<p>Welcome to <strong>SmartLedger</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). Please read these Terms of Service (&quot;Terms&quot;) carefully before using the SmartLedger mobile application (&quot;App,&quot; &quot;Service&quot;).</p>
+<p>By downloading, installing, accessing, or using SmartLedger, you agree to be bound by these Terms and our <a href="#privacy-policy">Privacy Policy</a>. If you do not agree to these Terms, please do not use the application.</p>
+<hr />
+<h2>1. Description of the Service</h2>
+<p>SmartLedger is an offline-first, privacy-focused personal finance manager designed to help users track personal transactions, manage wallets, set budgets, monitor recurring payments, organize debts, and view financial analytics.</p>
+<p>The application features <strong>client-side zero-knowledge encryption</strong>, an optional &quot;Pending Approvals&quot; automated SMS expense detection system, optional multi-device encrypted cloud synchronization, and local backup capabilities.</p>
+<hr />
+<h2>2. Important Disclaimers: Not Financial, Tax, or Legal Advice</h2>
+<ul>
+<li><strong>Informational &amp; Productivity Tool Only:</strong> SmartLedger is provided solely for personal organizational and budgeting convenience.</li>
+<li><strong>No Professional Advice:</strong> SmartLedger and its creators are <strong>not licensed financial planners, chartered accountants, bankers, investment brokers, or tax advisors</strong>. Nothing within the app constitutes financial, investment, accounting, tax, or legal advice.</li>
+<li><strong>User Responsibility:</strong> You are solely responsible for verifying the accuracy of all calculations, reports, tax figures, currency conversions, and transaction summaries before making any financial or tax decisions.</li>
+</ul>
+<hr />
+<h2>3. Zero-Knowledge Encryption &amp; Master PIN Responsibility</h2>
+<p>SmartLedger employs client-side <strong>AES-256-GCM encryption</strong> derived via <strong>PBKDF2 (80,000 rounds of SHA-256)</strong> directly on your device.</p>
+<ul>
+<li><strong>User Custody of Keys:</strong> Your Master PIN and encryption keys exist only on your device and are never stored on, transmitted to, or known by SmartLedger servers or developers.</li>
+<li><strong>No Backdoor or Password Reset:</strong> Because the system is zero-knowledge, <strong>there is no &quot;Forgot PIN&quot; reset or developer backdoor.</strong></li>
+<li><strong>Risk of Data Loss:</strong> If you forget your Master PIN and have not backed up your recovery credentials, <strong>neither you nor SmartLedger developers can decrypt or recover your data.</strong></li>
+<li><strong>Liability Disclaimer:</strong> SmartLedger shall not be held liable for any loss of data, inability to access records, or locked vaults resulting from a forgotten PIN or damaged device.</li>
+</ul>
+<hr />
+<h2>4. Automated SMS &amp; Payment Alert Parsing Disclaimer</h2>
+<p>SmartLedger includes an optional feature that scans incoming transactional SMS messages (e.g., UPI, bank debit/credit alerts, digital wallets) locally on your device:</p>
+<ul>
+<li><strong>Convenience Feature:</strong> Automated SMS detection is provided strictly as a convenience to speed up expense entry.</li>
+<li><strong>No Guarantee of 100% Detection:</strong> Bank and payment gateway message templates change frequently without notice. SmartLedger does not warrant that every transaction will be parsed accurately or detected.</li>
+<li><strong>Review Before Finalizing:</strong> All detected SMS expenses are placed into a temporary <strong>Pending Approvals Inbox</strong>. You are responsible for reviewing amounts, categories, and accounts before approving items into your permanent ledger.</li>
+</ul>
+<hr />
+<h2>5. In-App Purchases, Subscriptions &amp; Billing</h2>
+<p>SmartLedger offers optional premium features (&quot;SmartLedger Pro&quot;), available via monthly/annual subscriptions or lifetime access.</p>
+<ul>
+<li><strong>Billing Processor:</strong> All financial transactions, subscriptions, and payment methods are handled directly by <strong>Google Play In-App Billing</strong> (and managed via RevenueCat). SmartLedger never collects or stores your credit/debit card numbers or bank credentials.</li>
+<li><strong>Automatic Renewal:</strong> Recurring subscriptions automatically renew unless canceled in your Google Play Store account settings at least 24 hours prior to the end of the current billing cycle.</li>
+<li><strong>Cancellation:</strong> You may cancel your subscription at any time through the <strong>Google Play Store $\to$ Payments &amp; subscriptions</strong>. Upon cancellation, you retain Pro access until the end of the paid billing period.</li>
+<li><strong>Refunds:</strong> Refund requests are subject to Google Play’s official refund policies and must be initiated through Google Play Support.</li>
+</ul>
+<hr />
+<h2>6. Backups and Data Sovereignty</h2>
+<ul>
+<li><strong>Local Data Sovereignty:</strong> You own your financial data. You may export an encrypted portable backup file (<code>.enc</code> or JSON) or generate PDF reports at any time via App Settings.</li>
+<li><strong>Backup Responsibility:</strong> While SmartLedger supports optional Google Drive backups and encrypted cloud sync, you are encouraged to periodically export manual backups. SmartLedger is not responsible for lost records due to device malfunction, OS upgrades, or accidental local deletion.</li>
+</ul>
+<hr />
+<h2>7. Intellectual Property &amp; Limited License</h2>
+<ul>
+<li>We grant you a limited, personal, non-exclusive, non-transferable, revocable license to use SmartLedger on your personal Android device in accordance with these Terms.</li>
+<li>You agree not to decompile, reverse-engineer, modify, redistribute, or create unauthorized derivative works based on the application, except as permitted by open-source licenses governing specific sub-components.</li>
+</ul>
+<hr />
+<h2>8. Disclaimer of Warranties</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SMARTLEDGER IS PROVIDED ON AN <strong>&quot;AS IS&quot;</strong> AND <strong>&quot;AS AVAILABLE&quot;</strong> BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, TIMELINESS, OR NON-INFRINGEMENT.</p>
+<p>WE DO NOT WARRANT THAT THE APPLICATION WILL OPERATE UNINTERRUPTED, COMPLETELY ERROR-FREE, OR COMPATIBLE WITH ALL DEVICE HARDWARE OR OPERATING SYSTEM VERSIONS.</p>
+<hr />
+<h2>9. Limitation of Liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL SMARTLEDGER, ITS DEVELOPERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES—INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR FINANCIAL LOSSES—ARISING OUT OF OR IN CONNECTION WITH:</p>
+<ol>
+<li>YOUR USE OF OR INABILITY TO USE THE APPLICATION;</li>
+<li>ANY INACCURATE CALCULATIONS, BUDGET DISCREPANCIES, OR MISSED SMS EXPENSES;</li>
+<li>DATA INACCESSIBILITY RESULTING FROM A FORGOTTEN MASTER PIN;</li>
+<li>UNAUTHORIZED ACCESS TO YOUR DEVICE RESULTING FROM WEAK DEVICE PASSCODES.</li>
+</ol>
+<hr />
+<h2>10. Future Service Evolution &amp; Modifications to Terms</h2>
+<p>SmartLedger is an actively developed product. We reserve the right to modify, enhance, update, suspend, or discontinue any feature, functionality, or tier of the Service, as well as modify these Terms, at any time to accommodate new features, technical requirements, or legal obligations.</p>
+<ul>
+<li><strong>Notice of Material Changes:</strong> In the event of material modifications that significantly impact your rights, obligations, or service usage, we will provide reasonable or prominent notice through an <strong>in-app notice, banner, release notes update, or our public repository</strong>, alongside an updated &quot;Last Updated&quot; date.</li>
+<li><strong>Continued Use Constitutes Acceptance:</strong> Your continued access to or use of the application following the posting or notification of any modified Terms constitutes your full, binding acceptance of the updated Terms. If you do not agree to the revised Terms, you must cease using the application and uninstall it.</li>
+</ul>
+<hr />
+<h2>11. Termination</h2>
+<p>You may terminate these Terms at any time by ceasing all use of the application, wiping your local data via <strong>Settings $\to$ Clear All Local Data</strong>, and uninstalling the app. We reserve the right to suspend or terminate service access for users who violate these Terms.</p>
+<hr />
+<h2>12. Contact Information</h2>
+<p>If you have any questions or feedback regarding these Terms of Service, please contact us at:</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:sreekanthreddy778@gmail.com">sreekanthreddy778@gmail.com</a></li>
+<li><strong>Application:</strong> SmartLedger Mobile Application</li>
+</ul>
+
+  </section>
+</main>
+<footer>© SmartLedger · Privacy-first personal finance</footer>
+</body>
+</html>
